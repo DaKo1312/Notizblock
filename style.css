@@ -1,0 +1,26 @@
+/* body {
+    background: url(./assets/img/backgroundnotebook-6127871.png);
+    background-size: cover;
+    background-size: 768px ;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    h1 {
+        font-size: 68px;
+        font-family: 'Give You Glory';
+    }
+
+    img {
+        width: 100px;
+    }
+} */
