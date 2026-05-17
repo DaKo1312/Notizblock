@@ -1,26 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notizblock</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Notizblock</title>
 
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 
-    <link rel="stylesheet" href="./styles/standard.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body onload="renderNotes()">
-    <h1>Notizblock</h1>
-    <input id="note_input" type="text">
-    <button onclick="addNote()">Notiz speichern</button>
-    <h2>Notes</h2>
-    <div id="content">
-        
-    </div>
-    <h2>Trash</h2>
-    <div id="trash_content">
-        
-    </div>
-</body>
+        <link rel="stylesheet" href="./styles/fonts.css" />
+        <link rel="stylesheet" href="./styles/standard.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body onload="init()">
+        <header class="header_main">
+            <div class="header_content">
+                <h1>Notizblock</h1>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <section class="notepad">
+                    <div class="input">
+                        <input
+                            id="note_title_input"
+                            placeholder="Note..."
+                            type="text"
+                        />
+                        <textarea
+                            id="note_text_input"
+                            placeholder="TO DO..."
+                        ></textarea>
+                        <button class="save" onclick="addNote()">Save</button>
+                    </div>
+                    <h2>🗒️Notes</h2>
+                    <div id="content" class="content"></div>
+                    <h2>🗃️Archiv</h2>
+                    <div id="archiv_content" class="archiv_content"></div>
+                    <h2>🗑️Trash</h2>
+                    <div id="trash_content" class="trash_content"></div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer_main">
+            <div class="footer_content">
+                <img src="./assets/icons/pencil.png">
+            </div>
+        </footer>
+    </body>
 </html>
